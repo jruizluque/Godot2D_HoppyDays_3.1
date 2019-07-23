@@ -12,6 +12,7 @@ extents = Vector2( 320, 320 )
 position = Vector2( 522.634, 188.624 )
 
 [node name="Floor" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 507.179, 726.436 )
 __meta__ = {
 "_edit_group_": true
@@ -26,6 +27,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="Floor2" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 1145.75, 869.935 )
 __meta__ = {
 "_edit_group_": true
@@ -40,6 +42,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="Floor3" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( -133.784, 563.804 )
 __meta__ = {
 "_edit_group_": true
