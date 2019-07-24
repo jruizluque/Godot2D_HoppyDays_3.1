@@ -9,6 +9,7 @@ height = 85.1999
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 513.361, 268.987 )
+collision_mask = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -19,4 +20,11 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="PlayerAnimation" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 3, 3 )
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = true
 [connection signal="animate" from="." to="PlayerAnimation" method="_on_Player_animate"]
