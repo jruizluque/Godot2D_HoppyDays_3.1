@@ -12,4 +12,4 @@ position = Vector2( 522.634, 188.624 )
 tile_set = ExtResource( 2 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 262164, 2, 0, 262170, 2, 0, 458752, 2, 0, 458758, 2, 0, 655372, 2, 0 )
+tile_data = PoolIntArray( -65529, 0, 0, 262164, 2, 0, 262170, 2, 0, 458752, 2, 0, 458758, 2, 0, 655372, 2, 0 )

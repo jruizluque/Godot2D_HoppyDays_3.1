@@ -22,8 +22,10 @@ shape = SubResource( 1 )
 [node name="PlayerAnimation" parent="." instance=ExtResource( 2 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1000, 0 )
 current = true
 zoom = Vector2( 3, 3 )
+limit_smoothed = true
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
 smoothing_enabled = true
