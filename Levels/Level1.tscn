@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/TileSet.tres" type="TileSet" id=2]
+[ext_resource path="res://Hazards/SpikesTop.tscn" type="PackedScene" id=3]
 
 [node name="Level1" type="Node2D"]
 
@@ -12,4 +13,9 @@ position = Vector2( 384.867, 573.571 )
 tile_set = ExtResource( 2 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 1441794, 2, 0, 1441800, 2, 0, 1441806, 2, 0, 1441812, 2, 0, 1441818, 2, 0, 1441824, 2, 0, 1441830, 2, 0, 1441836, 2, 0, 1441842, 2, 0, 1441848, 2, 0, 1441854, 2, 0, 1441860, 2, 0, 1441866, 2, 0, 1441872, 2, 0, 1441878, 2, 0, 1441884, 2, 0, 1441890, 2, 0 )
+tile_data = PoolIntArray( 524363, 0, 0, 720915, 0, 0, 786501, 0, 0, 786502, 0, 0, 1048588, 0, 0, 1114144, 0, 0, 1114177, 0, 0, 1114198, 0, 0, 1441794, 2, 0, 1441800, 2, 0, 1441812, 2, 0, 1441818, 2, 0, 1441830, 2, 0, 1441836, 2, 0, 1441848, 2, 0, 1441854, 2, 0, 1441872, 2, 0, 1441884, 2, 0, 1441890, 2, 0, 1835058, 0, 0 )
+
+[node name="Hazards" type="Node" parent="."]
+
+[node name="SpikesTop" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1071.33, 1008.54 )
