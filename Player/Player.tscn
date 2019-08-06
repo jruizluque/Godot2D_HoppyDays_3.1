@@ -28,7 +28,6 @@ shape = SubResource( 1 )
 [node name="PlayerAnimation" parent="." instance=ExtResource( 2 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-editor/display_folded = true
 position = Vector2( 1000, 0 )
 current = true
 zoom = Vector2( 4, 4 )
