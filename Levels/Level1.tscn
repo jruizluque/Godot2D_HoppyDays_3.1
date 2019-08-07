@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Levels/GameState.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Levels/TileSet.tres" type="TileSet" id=3]
 [ext_resource path="res://Hazards/SpikesTop.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Items/JumpPad.tscn" type="PackedScene" id=5]
-[ext_resource path="res://SFX/Chiptune_Adventures_1.ogg" type="AudioStream" id=6]
-[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Items/JumpPad.tscn" type="PackedScene" id=6]
+[ext_resource path="res://SFX/Chiptune_Adventures_1.ogg" type="AudioStream" id=7]
+[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=8]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 1 )
@@ -21,26 +22,69 @@ format = 1
 tile_data = PoolIntArray( 524363, 0, 0, 720915, 0, 0, 786501, 0, 0, 786502, 0, 0, 1048588, 0, 0, 1114144, 0, 0, 1114177, 0, 0, 1114198, 0, 0, 1441794, 2, 0, 1441800, 2, 0, 1441812, 2, 0, 1441818, 2, 0, 1441830, 2, 0, 1441836, 2, 0, 1441848, 2, 0, 1441854, 2, 0, 1441872, 2, 0, 1441884, 2, 0, 1441890, 2, 0, 1835058, 0, 0 )
 
 [node name="Hazards" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="SpikesTop" parent="Hazards" instance=ExtResource( 4 )]
-position = Vector2( 1073.79, 996.263 )
+position = Vector2( 2228.99, 1064.81 )
 
 [node name="SpikesTop2" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 749.477, 1381.72 )
 
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin1" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 962.581, 920.558 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1394.1, 602.055 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1513.97, 458.214 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1681.78, 389.719 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1763.98, 547.258 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1774.25, 708.223 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1777.67, 869.187 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1784.52, 1019.88 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1777.67, 1187.69 )
+
+[node name="Coin10" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2575.65, 1290.43 )
+
+[node name="Coin11" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2719.49, 1290.43 )
+
+[node name="Coin12" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2870.18, 1290.43 )
+
+[node name="Coin13" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 3020.87, 1293.86 )
+
+[node name="Coin14" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 3805.14, 1287.01 )
+
 [node name="JumpsPads" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="JumpPad" parent="JumpsPads" instance=ExtResource( 5 )]
+[node name="JumpPad" parent="JumpsPads" instance=ExtResource( 6 )]
 position = Vector2( 3394.36, 1758.16 )
 
-[node name="JumpPad2" parent="JumpsPads" instance=ExtResource( 5 )]
+[node name="JumpPad2" parent="JumpsPads" instance=ExtResource( 6 )]
 position = Vector2( 4259.03, 1053.27 )
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 7 )
 volume_db = -5.0
 autoplay = true
 
-[node name="GUI" parent="." instance=ExtResource( 7 )]
+[node name="GUI" parent="." instance=ExtResource( 8 )]
