@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Levels/GameState.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://NPCs/Spikeman.tscn" type="PackedScene" id=9]
 [ext_resource path="res://NPCs/Cloud.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Items/Portal.tscn" type="PackedScene" id=11]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 1 )
@@ -94,9 +95,13 @@ autoplay = true
 [node name="GUI" parent="." instance=ExtResource( 8 )]
 
 [node name="NPCs" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Spikeman" parent="NPCs" instance=ExtResource( 9 )]
 position = Vector2( 3962.46, 1330.42 )
 
 [node name="Cloud" parent="NPCs" instance=ExtResource( 10 )]
 position = Vector2( 2197.07, -34.3293 )
+
+[node name="Portal" parent="." instance=ExtResource( 11 )]
+position = Vector2( 6432.75, 1250.03 )
